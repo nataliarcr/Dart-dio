@@ -1,4 +1,3 @@
-import 'package:condicionais/condicionais.dart' as condicionais;
 import 'dart:convert';
 import 'dart:io';
 
@@ -9,7 +8,7 @@ void main(List<String> arguments) {
 
   var opera = lerConsoleDouble('Informe a operação');
 
-  calcular(opera, valor1, valor2);
+  //calcular(opera, valor1, valor2);
 }
 
 void calcular(String opera, double valor1, double valor2) {

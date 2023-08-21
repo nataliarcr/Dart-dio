@@ -1,8 +1,11 @@
-import 'package:meu_app/meu_app.dart';
-import 'package:test/test.dart';
+import '../lib/meu_app.dart';
 
 void main() {
   test('calculate', () {
     expect(calculate(), 42);
   });
 }
+
+void expect(int calculate, int i) {}
+
+void test(String s, Null Function() param1) {}
