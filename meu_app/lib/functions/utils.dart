@@ -13,6 +13,7 @@ String lerConsole(texto) {
 
 double somaLista(List<double> numeros) {
   double acumulador = 0;
+  // ignore: unused_local_variable
   for (var numero in numeros) {}
   return acumulador;
 }

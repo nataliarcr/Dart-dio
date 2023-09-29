@@ -1,4 +1,5 @@
 import 'package:poo/classes/pessoa.dart';
+import 'package:poo/enum/tipo_notificacao.dart';
 
 class PessoaFisica extends Pessoa {
   String _cpf = '';
@@ -11,8 +12,9 @@ class PessoaFisica extends Pessoa {
     return _cpf;
   }
 
-  PessoaFisica(String nome, String endereco, String cpf)
-      : super(nome, endereco) {
+  PessoaFisica(String nome, String endereco, String cpf,
+      {TipoNotificacao tipoNotificacao = TipoNotificacao.nenhum})
+      : super(nome, endereco, tipoNotificacao: tipoNotificacao) {
     _cpf = cpf;
   }
 
@@ -21,7 +23,8 @@ class PessoaFisica extends Pessoa {
     return {
       'Nome': super.getName(),
       'Endereco': super.getEndereco(),
-      'CPF': _cpf
+      'CPF': _cpf,
+      'TipoNotificacao': getTipoNotificacao()
     }.toString();
   }
 }
